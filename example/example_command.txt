@@ -1,0 +1,1 @@
+./contact_calc --i_f=/home/ben/Workspace/contact_analysis/example/example.inp --o_d=/home/ben/Workspace/contact_analysis/example/ --o_l=example --l=/home/ben/Workspace/contact_analysis/example/test.log --n_t=4

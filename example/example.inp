@@ -1,0 +1,50 @@
+#####################
+# program execution #
+#####################
+# flag for serial (1) vs. parallel execution (2)
+run = 2
+# range of replicate systems to be used
+min_rep = 1
+max_rep = 10
+
+###############
+# Method List #
+###############
+# 1 - distance matrix between CoMs of CG beads
+# 2 - distance matrix of average distances between constituents of CG beads
+# 3 - contact count of CoMs of CG beads less than r_cut
+# 4 - contact count of distances between constituents of CG beads less than r_cut
+# 5 - (unused)
+# 6 - inverse power, 2 params
+# 7 - Hill-type function, 3 params
+# 8 - hyperbolic tangent, 2 params
+method = 8
+
+# parameters for method
+N_link_params = 2
+p_1 = 1.7E+1
+p_2 = 6.8E+1
+
+
+################################
+# Lengths (units of Angstroms) #
+################################
+# r, monomer radius
+r = 1.7E+1
+
+
+###############################
+# Coarse-Graining Information #
+###############################
+# CG, coarse-graining factor
+CG = 25
+# N, total number of coordinates
+N = 16000
+# flag to use map file (1), otherwise default coarse-graining (0)
+map_flag = 1
+# file encoding coarse-graining for mapped system
+map_file = /home/ben/Workspace/btree_contacts/example/example_CGmap.dat
+
+data_label = example
+data_dir = /home/ben/Workspace/btree_contacts/example/
+data_size(bytes) = 4
